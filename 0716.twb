@@ -1,0 +1,1759 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0615.1128                               -->
+<workbook original-version='18.1' source-build='2018.1.2 (20181.18.0615.1128)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='주문 (global_superstore_2016_ko-kr_0)' inline='true' name='federated.11o3dlg0ko3clw10ckev11c7tgj4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='global_superstore_2016_ko-kr_0' name='excel-direct.0eiuakg1pqi2ik13d02hm1aq518e'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/HS/Documents/GitHub/Tableau/180716+Tableau/global_superstore_2016_ko-kr_0.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0eiuakg1pqi2ik13d02hm1aq518e' name='주문' table='[주문$]' type='table'>
+          <columns gridOrigin='A1:X10001:no:A1:X10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='행 ID' ordinal='0' />
+            <column datatype='string' name='주문 ID' ordinal='1' />
+            <column datatype='date' name='주문 날짜' ordinal='2' />
+            <column datatype='date' name='배송 날짜' ordinal='3' />
+            <column datatype='string' name='배송 형태' ordinal='4' />
+            <column datatype='string' name='고객 ID' ordinal='5' />
+            <column datatype='string' name='고객 이름' ordinal='6' />
+            <column datatype='string' name='세그먼트' ordinal='7' />
+            <column datatype='integer' name='우편 번호' ordinal='8' />
+            <column datatype='string' name='도시' ordinal='9' />
+            <column datatype='string' name='주/시/도' ordinal='10' />
+            <column datatype='string' name='국가' ordinal='11' />
+            <column datatype='string' name='지역' ordinal='12' />
+            <column datatype='string' name='시장' ordinal='13' />
+            <column datatype='string' name='제품 ID' ordinal='14' />
+            <column datatype='string' name='범주' ordinal='15' />
+            <column datatype='string' name='하위 범주' ordinal='16' />
+            <column datatype='string' name='제품 이름' ordinal='17' />
+            <column datatype='real' name='매출' ordinal='18' />
+            <column datatype='integer' name='수량' ordinal='19' />
+            <column datatype='real' name='할인' ordinal='20' />
+            <column datatype='real' name='수익' ordinal='21' />
+            <column datatype='real' name='배송 비용' ordinal='22' />
+            <column datatype='string' name='주문 우선 순위' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>행 ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[행 ID]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>행 ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주문 ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[주문 ID]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>주문 ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주문 날짜</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[주문 날짜]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>주문 날짜</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>배송 날짜</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[배송 날짜]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>배송 날짜</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>배송 형태</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[배송 형태]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>배송 형태</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>고객 ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[고객 ID]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>고객 ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>고객 이름</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[고객 이름]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>고객 이름</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>세그먼트</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[세그먼트]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>세그먼트</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>우편 번호</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[우편 번호]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>우편 번호</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>도시</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[도시]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>도시</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주/시/도</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[주/시/도]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>주/시/도</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>국가</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[국가]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>국가</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지역</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[지역]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>지역</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>시장</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[시장]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>시장</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>제품 ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[제품 ID]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>제품 ID</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>범주</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[범주]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>범주</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>하위 범주</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[하위 범주]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>하위 범주</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>제품 이름</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[제품 이름]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>제품 이름</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>매출</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[매출]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>매출</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>수량</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[수량]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>수량</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>할인</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[할인]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>할인</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>수익</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[수익]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>수익</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>배송 비용</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[배송 비용]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>배송 비용</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주문 우선 순위</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[주문 우선 순위]</local-name>
+            <parent-name>[주문]</parent-name>
+            <remote-alias>주문 우선 순위</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[주문]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:X10001:no:A1:X2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='x일 전에 배송됨' datatype='integer' name='[Calculation_676665864651382784]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='datediff(&quot;day&quot;, [배송 날짜], TODAY())' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[시장]' role='dimension' type='nominal' />
+      <column datatype='string' name='[행 ID]' role='dimension' type='nominal' />
+      <column-instance column='[시장]' derivation='None' name='[none:시장:nk]' pivot='key' type='nominal' />
+      <folder name='고객' role='dimensions'>
+        <folder-item name='[고객 ID]' type='field' />
+        <folder-item name='[고객 이름]' type='field' />
+      </folder>
+      <layout dim-ordering='alphabetic' dim-percentage='0.69' measure-ordering='alphabetic' measure-percentage='0.31' show-hidden-fields='true' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:시장:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;LATAM&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;유럽&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;아프리카&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;아시아 태평양&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;USCA&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='해결된 문제 (data_prep_-_flights_ko-kr)' inline='true' name='federated.1g6b7sk0fdbx0918b4nri1wyg9y9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_prep_-_flights_ko-kr' name='excel-direct.1wbvgqu19azctx15m4pqg1shr6gr'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/HS/Documents/GitHub/Tableau/180716+Tableau/data_prep_-_flights_ko-kr.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation name='피벗' type='pivot'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy-MM-dd' name='피벗 필드명' />
+            <column datatype='integer' name='피벗 필드 값' />
+          </columns>
+          <tag name='피벗 필드명'>
+            <value name='[2015-01-01]' />
+            <value name='[2015-02-01]' />
+            <value name='[2015-03-01]' />
+            <value name='[2015-04-01]' />
+            <value name='[2015-05-01]' />
+            <value name='[2015-06-01]' />
+            <value name='[2015-07-01]' />
+            <value name='[2015-08-01]' />
+            <value name='[2015-09-01]' />
+            <value name='[2015-10-01]' />
+            <value name='[2015-11-01]' />
+            <value name='[2015-12-01]' />
+          </tag>
+          <groups>
+            <group name='피벗 필드 값'>
+              <field name='[해결된 문제].[2015-01-01]' />
+              <field name='[해결된 문제].[2015-02-01]' />
+              <field name='[해결된 문제].[2015-03-01]' />
+              <field name='[해결된 문제].[2015-04-01]' />
+              <field name='[해결된 문제].[2015-05-01]' />
+              <field name='[해결된 문제].[2015-06-01]' />
+              <field name='[해결된 문제].[2015-07-01]' />
+              <field name='[해결된 문제].[2015-08-01]' />
+              <field name='[해결된 문제].[2015-09-01]' />
+              <field name='[해결된 문제].[2015-10-01]' />
+              <field name='[해결된 문제].[2015-11-01]' />
+              <field name='[해결된 문제].[2015-12-01]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.1wbvgqu19azctx15m4pqg1shr6gr' name='해결된 문제' table='[&apos;해결된 문제$&apos;]' type='table'>
+            <columns gridOrigin='B1:N35:no:B1:N35:1' header='no' lost='0' outcome='1' processed='321'>
+              <column datatype='string' name='직원' ordinal='0' />
+              <column datatype='integer' name='2015-01-01' ordinal='1' />
+              <column datatype='integer' name='2015-02-01' ordinal='2' />
+              <column datatype='integer' name='2015-03-01' ordinal='3' />
+              <column datatype='integer' name='2015-04-01' ordinal='4' />
+              <column datatype='integer' name='2015-05-01' ordinal='5' />
+              <column datatype='integer' name='2015-06-01' ordinal='6' />
+              <column datatype='integer' name='2015-07-01' ordinal='7' />
+              <column datatype='integer' name='2015-08-01' ordinal='8' />
+              <column datatype='integer' name='2015-09-01' ordinal='9' />
+              <column datatype='integer' name='2015-10-01' ordinal='10' />
+              <column datatype='integer' name='2015-11-01' ordinal='11' />
+              <column datatype='integer' name='2015-12-01' ordinal='12' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[해결된 문제]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;B1:N35:no:B1:N35:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>321</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>직원</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[직원]</local-name>
+            <parent-name>[해결된 문제]</parent-name>
+            <remote-alias>직원</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>피벗 필드명</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[피벗 필드명]</local-name>
+            <parent-name>[피벗]</parent-name>
+            <remote-alias>피벗 필드명</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>피벗 필드 값</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[피벗 필드 값]</local-name>
+            <parent-name>[피벗]</parent-name>
+            <remote-alias>피벗 필드 값</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='위치' datatype='string' name='[직원 - 분할 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1g6b7sk0fdbx0918b4nri1wyg9y9].[직원]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [직원], &quot;-&quot;, 1 ) )' />
+      </column>
+      <column aggregation='Sum' caption='직원ID' datatype='integer' name='[직원 - 분할 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1g6b7sk0fdbx0918b4nri1wyg9y9].[직원]'>
+        <calculation class='tableau' formula='INT( SPLIT( [직원], &quot;-&quot;, 2 ) )' />
+      </column>
+      <column caption='해결된 문제' datatype='integer' name='[피벗 필드 값]' role='measure' type='quantitative' />
+      <column caption='날짜' datatype='date' name='[피벗 필드명]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.537143' measure-ordering='alphabetic' measure-percentage='0.462857' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Sheet1 (Coffee Chain)' inline='true' name='federated.0iickti0m05unw10arwdf1szrx8q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Coffee Chain' name='excel-direct.0toxjzp0zwrr441cx7res0c776mx'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/HS/Documents/GitHub/Tableau/180716+Tableau/datasets_ko-kr/Coffee Chain.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0toxjzp0zwrr441cx7res0c776mx' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:T4249:no:A1:T4249:0' header='yes' outcome='2'>
+            <column datatype='integer' name='지역 코드' ordinal='0' />
+            <column datatype='date' name='날짜' ordinal='1' />
+            <column datatype='string' name='영역' ordinal='2' />
+            <column datatype='string' name='영역 크기' ordinal='3' />
+            <column datatype='string' name='제품' ordinal='4' />
+            <column datatype='string' name='제품군' ordinal='5' />
+            <column datatype='string' name='제품 유형' ordinal='6' />
+            <column datatype='string' name='주/시/도' ordinal='7' />
+            <column datatype='string' name='유형' ordinal='8' />
+            <column datatype='integer' name='예상 원가' ordinal='9' />
+            <column datatype='integer' name='예상 수익률' ordinal='10' />
+            <column datatype='integer' name='예상 수익' ordinal='11' />
+            <column datatype='integer' name='예상 매출' ordinal='12' />
+            <column datatype='integer' name='원가' ordinal='13' />
+            <column datatype='integer' name='재고' ordinal='14' />
+            <column datatype='integer' name='수익률' ordinal='15' />
+            <column datatype='integer' name='마케팅' ordinal='16' />
+            <column datatype='integer' name='수익' ordinal='17' />
+            <column datatype='integer' name='매출' ordinal='18' />
+            <column datatype='integer' name='비용 총계' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>지역 코드</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[지역 코드]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>지역 코드</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>날짜</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[날짜]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>날짜</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영역</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[영역]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>영역</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영역 크기</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[영역 크기]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>영역 크기</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>제품</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[제품]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>제품</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>제품군</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[제품군]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>제품군</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>제품 유형</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[제품 유형]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>제품 유형</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주/시/도</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[주/시/도]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>주/시/도</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>유형</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[유형]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>유형</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>예상 원가</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[예상 원가]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>예상 원가</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>예상 수익률</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[예상 수익률]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>예상 수익률</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>예상 수익</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[예상 수익]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>예상 수익</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>예상 매출</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[예상 매출]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>예상 매출</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>원가</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[원가]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>원가</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>재고</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[재고]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>재고</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>수익률</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[수익률]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>수익률</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>마케팅</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[마케팅]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>마케팅</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>수익</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[수익]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>수익</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>매출</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[매출]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>매출</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>비용 총계</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[비용 총계]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>비용 총계</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T4249:no:A1:T4249:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='지역' datatype='string' name='[영역]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.407143' measure-ordering='alphabetic' measure-percentage='0.592857' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='구매 (Office City)' inline='true' name='federated.0rnejoa1x6mxs11fkchq40rtmbt2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Office City' name='excel-direct.1sq2flj19dwoih17nfqe51v3lyat'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/HS/Documents/GitHub/Tableau/180716+Tableau/datasets_ko-kr/Office City.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1sq2flj19dwoih17nfqe51v3lyat' name='구매' table='[구매$]' type='table'>
+          <columns gridOrigin='A1:M9427:no:A1:M9427:0' header='yes' outcome='2'>
+            <column datatype='integer' name='행 ID' ordinal='0' />
+            <column datatype='integer' name='고객 ID' ordinal='1' />
+            <column datatype='string' name='고객명' ordinal='2' />
+            <column datatype='string' name='상품 범주' ordinal='3' />
+            <column datatype='string' name='상품 하위 범주' ordinal='4' />
+            <column datatype='string' name='상품명' ordinal='5' />
+            <column datatype='string' name='지역' ordinal='6' />
+            <column datatype='string' name='주/시/도' ordinal='7' />
+            <column datatype='string' name='구/군/시' ordinal='8' />
+            <column datatype='integer' name='우편 번호' ordinal='9' />
+            <column datatype='real' name='수익' ordinal='10' />
+            <column datatype='real' name='매출' ordinal='11' />
+            <column datatype='integer' name='주문 ID' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>행 ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[행 ID]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>행 ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>고객 ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[고객 ID]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>고객 ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>고객명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[고객명]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>고객명</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>상품 범주</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[상품 범주]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>상품 범주</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>상품 하위 범주</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[상품 하위 범주]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>상품 하위 범주</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>상품명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[상품명]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>상품명</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지역</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[지역]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>지역</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주/시/도</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[주/시/도]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>주/시/도</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>구/군/시</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[구/군/시]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>구/군/시</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>우편 번호</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[우편 번호]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>우편 번호</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>수익</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[수익]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>수익</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>매출</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[매출]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>매출</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주문 ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[주문 ID]</local-name>
+            <parent-name>[구매]</parent-name>
+            <remote-alias>주문 ID</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[구매]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M9427:no:A1:M9427:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[고객 ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[주문 ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[행 ID]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.611429' measure-ordering='alphabetic' measure-percentage='0.388571' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.0iickti0m05unw10arwdf1szrx8q'>
+      <column-instance column='[영역]' derivation='None' name='[none:영역:nk]' pivot='key' type='nominal' />
+      <column-instance column='[주/시/도]' derivation='None' name='[none:주/시/도:nk]' pivot='key' type='nominal' />
+      <column caption='지역' datatype='string' name='[영역]' role='dimension' type='nominal' />
+      <column datatype='string' name='[주/시/도]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.11o3dlg0ko3clw10ckev11c7tgj4'>
+      <column-instance column='[주/시/도]' derivation='None' name='[none:주/시/도:nk]' pivot='key' type='nominal' />
+      <column-instance column='[지역]' derivation='None' name='[none:지역:nk]' pivot='key' type='nominal' />
+      <column datatype='string' name='[주/시/도]' role='dimension' type='nominal' />
+      <column datatype='string' name='[지역]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.11o3dlg0ko3clw10ckev11c7tgj4' target='federated.0iickti0m05unw10arwdf1szrx8q'>
+      <column-mapping>
+        <map key='[federated.11o3dlg0ko3clw10ckev11c7tgj4].[none:주/시/도:nk]' value='[federated.0iickti0m05unw10arwdf1szrx8q].[none:주/시/도:nk]' />
+        <map key='[federated.11o3dlg0ko3clw10ckev11c7tgj4].[none:지역:nk]' value='[federated.0iickti0m05unw10arwdf1szrx8q].[none:영역:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='주문 (global_superstore_2016_ko-kr_0)' name='federated.11o3dlg0ko3clw10ckev11c7tgj4' />
+            <datasource caption='Sheet1 (Coffee Chain)' name='federated.0iickti0m05unw10arwdf1szrx8q' />
+            <datasource caption='구매 (Office City)' name='federated.0rnejoa1x6mxs11fkchq40rtmbt2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iickti0m05unw10arwdf1szrx8q'>
+            <column-instance column='[매출]' derivation='Sum' name='[sum:매출:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[매출]' role='measure' type='quantitative' />
+            <column caption='지역' datatype='string' name='[영역]' role='dimension' type='nominal' />
+            <column datatype='string' name='[주/시/도]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0rnejoa1x6mxs11fkchq40rtmbt2'>
+            <column-instance column='[주/시/도]' derivation='None' name='[none:주/시/도:nk]' pivot='key' type='nominal' />
+            <column-instance column='[매출]' derivation='Sum' name='[sum:매출:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[매출]' role='measure' type='quantitative' />
+            <column datatype='string' name='[주/시/도]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.11o3dlg0ko3clw10ckev11c7tgj4'>
+            <column-instance column='[시장]' derivation='None' name='[none:시장:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[시장]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11o3dlg0ko3clw10ckev11c7tgj4].[none:시장:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0rnejoa1x6mxs11fkchq40rtmbt2].[sum:매출:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11o3dlg0ko3clw10ckev11c7tgj4].[none:시장:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0iickti0m05unw10arwdf1szrx8q].[sum:매출:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11o3dlg0ko3clw10ckev11c7tgj4].[none:시장:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0rnejoa1x6mxs11fkchq40rtmbt2].[none:주/시/도:nk]</rows>
+        <cols>([federated.0rnejoa1x6mxs11fkchq40rtmbt2].[sum:매출:qk] + [federated.0iickti0m05unw10arwdf1szrx8q].[sum:매출:qk])</cols>
+        <join-lod-include-overrides>
+          <column>[federated.0iickti0m05unw10arwdf1szrx8q].[영역]</column>
+          <column>[federated.0iickti0m05unw10arwdf1szrx8q].[주/시/도]</column>
+        </join-lod-include-overrides>
+      </table>
+    </worksheet>
+    <worksheet name='시트 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='해결된 문제 (data_prep_-_flights_ko-kr)' name='federated.1g6b7sk0fdbx0918b4nri1wyg9y9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1g6b7sk0fdbx0918b4nri1wyg9y9'>
+            <column-instance column='[직원 - 분할 2]' derivation='None' name='[none:직원 - 분할 2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[피벗 필드 값]' derivation='Sum' name='[sum:피벗 필드 값:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='직원ID' datatype='integer' name='[직원 - 분할 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1g6b7sk0fdbx0918b4nri1wyg9y9].[직원]'>
+              <calculation class='tableau' formula='INT( SPLIT( [직원], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[직원]' role='dimension' type='nominal' />
+            <column caption='해결된 문제' datatype='integer' name='[피벗 필드 값]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1g6b7sk0fdbx0918b4nri1wyg9y9].[none:직원 - 분할 2:ok]' direction='ASC' using='[federated.1g6b7sk0fdbx0918b4nri1wyg9y9].[sum:피벗 필드 값:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1g6b7sk0fdbx0918b4nri1wyg9y9].[none:직원 - 분할 2:ok]</rows>
+        <cols>[federated.1g6b7sk0fdbx0918b4nri1wyg9y9].[sum:피벗 필드 값:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='시트 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='115'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.11o3dlg0ko3clw10ckev11c7tgj4].[none:시장:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0iickti0m05unw10arwdf1szrx8q].[none:주/시/도:nk]</field>
+            <field>[federated.0rnejoa1x6mxs11fkchq40rtmbt2].[none:주/시/도:nk]</field>
+            <field>[federated.11o3dlg0ko3clw10ckev11c7tgj4].[none:범주:nk]</field>
+            <field>[federated.11o3dlg0ko3clw10ckev11c7tgj4].[none:시장:nk]</field>
+            <field>[federated.11o3dlg0ko3clw10ckev11c7tgj4].[none:하위 범주:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='시트 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.1g6b7sk0fdbx0918b4nri1wyg9y9].[sum:피벗 필드 값:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1g6b7sk0fdbx0918b4nri1wyg9y9].[none:직원 - 분할 2:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='시트 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='시트 2' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='시트 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
