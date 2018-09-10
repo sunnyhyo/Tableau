@@ -1,0 +1,2576 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0706.1237                               -->
+<workbook source-build='2018.1.3 (20181.18.0706.1237)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.openpane.recent.grid.vMaxSpacing' value='10' />
+    <preference name='ui.openpane.recent.grid.vMinSpacing' value='70' />
+    <preference name='ui.openpane.samples.item.maxHeight' value='100' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource inline='true' name='Global Superstore 2016' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection name='excel-direct.0olym3o0bydvm91ed3uil1hx3lp2leaf'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='H:/Documents (H)/Training/_Videos/_10.0/Data Sources/Global Superstore 2016/Global Superstore 2016.xlsx' interpretationMode='0' password='' server='' username='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0olym3o0bydvm91ed3uil1hx3lp2leaf' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:X10001:no:A1:X2147483647:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Postal Code' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='string' name='Country' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Market' ordinal='13' />
+            <column datatype='string' name='Product ID' ordinal='14' />
+            <column datatype='string' name='Category' ordinal='15' />
+            <column datatype='string' name='Sub-Category' ordinal='16' />
+            <column datatype='string' name='Product Name' ordinal='17' />
+            <column datatype='real' name='Sales' ordinal='18' />
+            <column datatype='integer' name='Quantity' ordinal='19' />
+            <column datatype='real' name='Discount' ordinal='20' />
+            <column datatype='real' name='Profit' ordinal='21' />
+            <column datatype='real' name='Shipping Cost' ordinal='22' />
+            <column datatype='string' name='Order Priority' ordinal='23' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Row ID                </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Row ID                </remote-alias>
+            <ordinal>0</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Order ID                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Order ID                </remote-alias>
+            <ordinal>1</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Order Date                </remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Order Date                </remote-alias>
+            <ordinal>2</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Ship Date                </remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Ship Date                </remote-alias>
+            <ordinal>3</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Ship Mode                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Ship Mode                </remote-alias>
+            <ordinal>4</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Customer ID                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Customer ID                </remote-alias>
+            <ordinal>5</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Customer Name                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Customer Name                </remote-alias>
+            <ordinal>6</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Segment                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Segment                </remote-alias>
+            <ordinal>7</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Postal Code                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Postal Code                </remote-alias>
+            <ordinal>8</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;City                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;City                </remote-alias>
+            <ordinal>9</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;State                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;State                </remote-alias>
+            <ordinal>10</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Country                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Country                </remote-alias>
+            <ordinal>11</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Region                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Region                </remote-alias>
+            <ordinal>12</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Market                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Market]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Market                </remote-alias>
+            <ordinal>13</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Product ID                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Product ID                </remote-alias>
+            <ordinal>14</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Category                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Category                </remote-alias>
+            <ordinal>15</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Sub-Category                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Sub-Category                </remote-alias>
+            <ordinal>16</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Product Name                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Product Name                </remote-alias>
+            <ordinal>17</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Sales                </remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Sales                </remote-alias>
+            <ordinal>18</ordinal>
+            <aggregation>Count</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Quantity                </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Quantity                </remote-alias>
+            <ordinal>19</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Discount                </remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Discount                </remote-alias>
+            <ordinal>20</ordinal>
+            <aggregation>Count</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Profit                </remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Profit                </remote-alias>
+            <ordinal>21</ordinal>
+            <aggregation>Count</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Shipping Cost                </remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shipping Cost]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Shipping Cost                </remote-alias>
+            <ordinal>22</ordinal>
+            <aggregation>Count</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&#10;&#10;Order Priority                </remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order Priority]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>&#10;&#10;Order Priority                </remote-alias>
+            <ordinal>23</ordinal>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:X10001:no:A1:X2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Row ID]' role='dimension' type='ordinal' />
+      <column datatype='date' name='[Ship Date]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;Guanacaste&quot;' value='&quot;Guanacaste&quot;' />
+        </semantic-values>
+      </column>
+      <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Order Priority]' derivation='None' name='[none:Order Priority:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Ship Date]' derivation='Month-Trunc' name='[tmn:Ship Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Ship Date]' derivation='Month-Trunc' name='[tmn:Ship Date:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Order Priority,MONTH(Ship Date),Ship Mode)' hidden='true' name='[Action (Order Priority,MONTH(Ship Date),Ship Mode)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Order Priority]' />
+          <groupfilter function='level-members' level='[tmn:Ship Date:ok]' />
+          <groupfilter function='level-members' level='[Ship Mode]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Order Priority,Product Container,MONTH(Ship Date),Ship Mode)' hidden='true' name='[Action (Order Priority,Product Container,MONTH(Ship Date),Ship Mode)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Order Priority]' />
+          <groupfilter function='level-members' level='[Product Container]' />
+          <groupfilter function='level-members' level='[tmn:Ship Date:qk]' />
+          <groupfilter function='level-members' level='[Ship Mode]' />
+        </groupfilter>
+      </group>
+      <group caption='동작(Order Priority,월(Ship Date),Ship Mode)' hidden='true' name='[Action (Order Priority,월(Ship Date),Ship Mode)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Order Priority]' />
+          <groupfilter function='level-members' level='[tmn:Ship Date:ok]' />
+          <groupfilter function='level-members' level='[Ship Mode]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Location'>
+          <field>[Market]</field>
+          <field>[Region]</field>
+          <field>[Country]</field>
+          <field>[State]</field>
+          <field>[City]</field>
+          <field>[Postal Code]</field>
+        </drill-path>
+        <drill-path name='Products'>
+          <field>[Category]</field>
+          <field>[Sub-Category]</field>
+          <field>[Product Name]</field>
+          <field>[Product ID]</field>
+        </drill-path>
+      </drill-paths>
+      <folder name='Customers' role='dimensions'>
+        <folder-item name='[Customer ID]' type='field' />
+        <folder-item name='[Customer Name]' type='field' />
+        <folder-item name='[Segment]' type='field' />
+      </folder>
+      <folder name='Orders' role='dimensions'>
+        <folder-item name='[Order Date]' type='field' />
+        <folder-item name='[Order ID]' type='field' />
+        <folder-item name='[Order Priority]' type='field' />
+      </folder>
+      <folder name='Shipping' role='dimensions'>
+        <folder-item name='[Ship Date]' type='field' />
+        <folder-item name='[Ship Mode]' type='field' />
+      </folder>
+      <extract count='-1' enabled='true' units='records'>
+        <connection authentication='auth-none' author-locale='ko_KR' class='hyper' db-format='dataengine' dbname='Data/Global Superstore 2016.twb Files/excel-direct.0olym3o0bydvm91ed3uil1hx3lp2.tde' default-settings='yes' sslmode='' update-time='06/23/2016 05:15:01 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='51290' timestamp-start='2016-06-23 17:15:01.114' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3650</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>165</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer ID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17415</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>796</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Discount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Discount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Discount</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>false</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Market</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Market]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Market</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>7</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Order Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Date</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Orders</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1430</approx-count>
+              <contains-null>false</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order ID</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25728</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Priority</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order Priority]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Priority</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Postal Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Postal Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Postal Code</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>639</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product ID</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3788</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product Name</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3788</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28234</approx-count>
+              <contains-null>false</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Orders</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>false</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Row ID</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[Row ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Row ID</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Orders</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51290</approx-count>
+              <contains-null>false</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27200</approx-count>
+              <contains-null>false</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Segment</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Ship Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Date</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Orders</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1464</approx-count>
+              <contains-null>false</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ship Mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ship Mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ship Mode</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shipping Cost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Shipping Cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shipping Cost</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16753</approx-count>
+              <contains-null>false</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1102</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub-Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sub-Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub-Category</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>false</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.660338' measure-ordering='alphabetic' measure-percentage='0.339662' show-structure='false' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Market:nk]' type='palette'>
+            <map to='#32a251'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#39737c'>
+              <bucket>&quot;USCA&quot;</bucket>
+            </map>
+            <map to='#3cb7cc'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#ff7f0f'>
+              <bucket>&quot;Asia Pacific&quot;</bucket>
+            </map>
+            <map to='#ffd94a'>
+              <bucket>&quot;LATAM&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Region:nk]' type='palette'>
+            <map to='#13a1a2'>
+              <bucket>&quot;Central America&quot;</bucket>
+            </map>
+            <map to='#1893ad'>
+              <bucket>&quot;Central Africa&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#1f83b4'>
+              <bucket>&quot;Caribbean&quot;</bucket>
+            </map>
+            <map to='#20a064'>
+              <bucket>&quot;Central Asia&quot;</bucket>
+            </map>
+            <map to='#32a031'>
+              <bucket>&quot;Central US&quot;</bucket>
+            </map>
+            <map to='#5aa33a'>
+              <bucket>&quot;Eastern Africa&quot;</bucket>
+            </map>
+            <map to='#6f63bb'>
+              <bucket>&quot;Western US&quot;</bucket>
+            </map>
+            <map to='#7d61b5'>
+              <bucket>&quot;Western Europe&quot;</bucket>
+            </map>
+            <map to='#80a93c'>
+              <bucket>&quot;Eastern Asia&quot;</bucket>
+            </map>
+            <map to='#8c5eb0'>
+              <bucket>&quot;Western Canada&quot;</bucket>
+            </map>
+            <map to='#a4b52c'>
+              <bucket>&quot;Eastern Canada&quot;</bucket>
+            </map>
+            <map to='#a54fb2'>
+              <bucket>&quot;Western Asia&quot;</bucket>
+            </map>
+            <map to='#bb44b1'>
+              <bucket>&quot;Western Africa&quot;</bucket>
+            </map>
+            <map to='#c14ba5'>
+              <bucket>&quot;Southern US&quot;</bucket>
+            </map>
+            <map to='#c7bd2a'>
+              <bucket>&quot;Eastern Europe&quot;</bucket>
+            </map>
+            <map to='#c84e8f'>
+              <bucket>&quot;Southern Europe&quot;</bucket>
+            </map>
+            <map to='#d0425c'>
+              <bucket>&quot;Southern Asia&quot;</bucket>
+            </map>
+            <map to='#dd4632'>
+              <bucket>&quot;Southern Africa&quot;</bucket>
+            </map>
+            <map to='#eabe42'>
+              <bucket>&quot;Eastern US&quot;</bucket>
+            </map>
+            <map to='#f26a1b'>
+              <bucket>&quot;Southeastern Asia&quot;</bucket>
+            </map>
+            <map to='#ff880e'>
+              <bucket>&quot;South America&quot;</bucket>
+            </map>
+            <map to='#ff9e0e'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#ffaf1f'>
+              <bucket>&quot;Northern Europe&quot;</bucket>
+            </map>
+            <map to='#ffba41'>
+              <bucket>&quot;North Africa&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Ship Mode:nk]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;First Class&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;Second Class&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Standard Class&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Same Day&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Order Priority:nk]' type='palette'>
+            <map to='#2ca02c'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Critical&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#ffd94a'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='Global Superstore 2016'>
+      <datasources>
+        <datasource name='Global Superstore 2016' />
+      </datasources>
+      <datasource-dependencies datasource='Global Superstore 2016'>
+        <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+        <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[Global Superstore 2016].[none:Market:nk]'>
+        <groupfilter from='&quot;Africa&quot;' function='range' level='[none:Market:nk]' to='&quot;USCA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[Global Superstore 2016].[none:Ship Mode:nk]'>
+        <groupfilter function='level-members' level='[none:Ship Mode:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[Global Superstore 2016].[none:Ship Mode:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Shipping Cost' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Order Priority' />
+        <param name='target' value='Shipping Cost' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Product Orders' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Order Priority' />
+        <param name='target' value='Product Orders' />
+      </command>
+    </action>
+    <action caption='Highlight 3 (generated)' name='[Action5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Shipping Cost (2)' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Order Priority' />
+        <param name='target' value='Shipping Cost (2)' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated) 1' name='[Action6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='presized dashboard' type='sheet' worksheet='Running Total Shipping Costs (2)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='presized dashboard' />
+      </command>
+    </action>
+    <action caption='Highlight 3 (generated) 1' name='[Action7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Resized Shipping Cost' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Order Priority' />
+        <param name='target' value='Resized Shipping Cost' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated) 1' name='[Action8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='presized dashboard' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Order Priority' />
+        <param name='target' value='presized dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average Shipping Cost by Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Global Superstore 2016' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Global Superstore 2016'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Shipping Cost]' role='measure' type='quantitative' />
+            <column-instance column='[Ship Mode]' derivation='Attribute' name='[attr:Ship Mode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Shipping Cost]' derivation='Avg' name='[avg:Shipping Cost:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order ID]' derivation='CountD' name='[ctd:Order ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[Global Superstore 2016].[none:Category:nk]'>
+            <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[Global Superstore 2016].[none:Ship Mode:nk]</column>
+            <column>[Global Superstore 2016].[none:Market:nk]</column>
+            <column>[Global Superstore 2016].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[Global Superstore 2016].[avg:Shipping Cost:qk]' include-totals='true' num-steps='5' palette='tableau-gray' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[Global Superstore 2016].[none:Ship Mode:nk]' value='Click to select a Ship Mode'>
+              <formatted-text>
+                <run>Click to select a Ship Mode</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[Global Superstore 2016].[avg:Shipping Cost:qk]' />
+              <lod column='[Global Superstore 2016].[none:Country:nk]' />
+              <lod column='[Global Superstore 2016].[ctd:Order ID:qk]' />
+              <tooltip column='[Global Superstore 2016].[attr:Ship Mode:nk]' />
+              <lod column='[Global Superstore 2016].[none:Category:nk]' />
+              <geometry column='[Global Superstore 2016].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#555555' fontsize='12'>Orders in &lt;[Global Superstore 2016].[none:Country:nk]&gt; shipped by &lt;[Global Superstore 2016].[attr:Ship Mode:nk]&gt; &#10;have an average shipping cost of &lt;[Global Superstore 2016].[avg:Shipping Cost:qk]&gt;</run>
+                <run fontcolor='#555555' italic='true'>&#10;(&lt;[Global Superstore 2016].[ctd:Order ID:qk]&gt; orders)&#10;&#10;* indicates multiple shipping modes</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Global Superstore 2016].[Latitude (generated)]</rows>
+        <cols>[Global Superstore 2016].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Average Shipping Cost by Country (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Global Superstore 2016' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Global Superstore 2016'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Shipping Cost]' role='measure' type='quantitative' />
+            <column-instance column='[Ship Mode]' derivation='Attribute' name='[attr:Ship Mode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Shipping Cost]' derivation='Avg' name='[avg:Shipping Cost:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order ID]' derivation='CountD' name='[ctd:Order ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[Global Superstore 2016].[none:Category:nk]'>
+            <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[Global Superstore 2016].[none:Ship Mode:nk]</column>
+            <column>[Global Superstore 2016].[none:Market:nk]</column>
+            <column>[Global Superstore 2016].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[Global Superstore 2016].[avg:Shipping Cost:qk]' include-totals='true' num-steps='5' palette='tableau-gray' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[Global Superstore 2016].[none:Ship Mode:nk]' value='Click to select a Ship Mode'>
+              <formatted-text>
+                <run>Click to select a Ship Mode</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[Global Superstore 2016].[avg:Shipping Cost:qk]' />
+              <lod column='[Global Superstore 2016].[none:Country:nk]' />
+              <lod column='[Global Superstore 2016].[ctd:Order ID:qk]' />
+              <tooltip column='[Global Superstore 2016].[attr:Ship Mode:nk]' />
+              <lod column='[Global Superstore 2016].[none:Category:nk]' />
+              <geometry column='[Global Superstore 2016].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#555555' fontsize='12'>Orders in &lt;[Global Superstore 2016].[none:Country:nk]&gt; shipped by &lt;[Global Superstore 2016].[attr:Ship Mode:nk]&gt; &#10;have an average shipping cost of &lt;[Global Superstore 2016].[avg:Shipping Cost:qk]&gt;</run>
+                <run fontcolor='#555555' italic='true'>&#10;(&lt;[Global Superstore 2016].[ctd:Order ID:qk]&gt; orders)&#10;&#10;* indicates multiple shipping modes</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Global Superstore 2016].[Latitude (generated)]</rows>
+        <cols>[Global Superstore 2016].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Product Orders'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Global Superstore 2016' />
+          </datasources>
+          <datasource-dependencies datasource='Global Superstore 2016'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Order ID]' derivation='CountD' name='[ctd:Order ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order Priority]' derivation='None' name='[none:Order Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Name]' derivation='None' name='[none:Product Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[Global Superstore 2016].[none:Category:nk]'>
+            <groupfilter function='member' level='[none:Category:nk]' member='&quot;Office Supplies&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[Global Superstore 2016].[none:Order Priority:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Critical&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Not Specified&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <computed-sort column='[Global Superstore 2016].[none:Product Name:nk]' direction='DESC' using='[Global Superstore 2016].[ctd:Order ID:qk]' />
+          <filter class='categorical' column='[Global Superstore 2016].[none:Sub-Category:nk]'>
+            <groupfilter function='level-members' level='[none:Sub-Category:nk]' />
+          </filter>
+          <slices>
+            <column>[Global Superstore 2016].[none:Ship Mode:nk]</column>
+            <column>[Global Superstore 2016].[none:Market:nk]</column>
+            <column>[Global Superstore 2016].[none:Category:nk]</column>
+            <column>[Global Superstore 2016].[none:Sub-Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[Global Superstore 2016].[none:Order Priority:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='173' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Global Superstore 2016].[none:Product Name:nk]</rows>
+        <cols>[Global Superstore 2016].[ctd:Order ID:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Resized Shipping Cost'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Shipping Cost</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Global Superstore 2016' />
+          </datasources>
+          <datasource-dependencies datasource='Global Superstore 2016'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Shipping Cost]' role='measure' type='quantitative' />
+            <column-instance column='[Shipping Cost]' derivation='Avg' name='[avg:Shipping Cost:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order Priority]' derivation='None' name='[none:Order Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Segment]' derivation='None' name='[none:Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[Global Superstore 2016].[none:Order Priority:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Critical&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Not Specified&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[Global Superstore 2016].[none:Ship Mode:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Same Day&quot;</bucket>
+              <bucket>&quot;First Class&quot;</bucket>
+              <bucket>&quot;Second Class&quot;</bucket>
+              <bucket>&quot;Standard Class&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[Global Superstore 2016].[none:Ship Mode:nk]</column>
+            <column>[Global Superstore 2016].[none:Market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[Global Superstore 2016].[none:Ship Mode:nk]' value='112' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[Global Superstore 2016].[none:Order Priority:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='stroke-color' id='refline0' value='#898989' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Global Superstore 2016].[none:Order Priority:nk]' value='Click to highlight'>
+              <formatted-text>
+                <run>Click to highlight</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[Global Superstore 2016].[none:Order Priority:nk]' />
+              <lod column='[Global Superstore 2016].[none:Ship Mode:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#555555' fontsize='12'>For &lt;[Global Superstore 2016].[none:Order Priority:nk]&gt; Priority orders shipped &lt;[Global Superstore 2016].[none:Ship Mode:nk]&gt;&#10;The average shipping cost is </run>
+                <run bold='true' fontcolor='#555555' fontsize='12'>&lt;[Global Superstore 2016].[avg:Shipping Cost:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='173' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([Global Superstore 2016].[none:Segment:nk] / ([Global Superstore 2016].[none:Ship Mode:nk] / [Global Superstore 2016].[none:Order Priority:nk]))</rows>
+        <cols>[Global Superstore 2016].[avg:Shipping Cost:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Running Total Shipping Costs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>[Global Superstore 2016].[none:Ship Mode:nk]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Global Superstore 2016' />
+          </datasources>
+          <datasource-dependencies datasource='Global Superstore 2016'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Ship Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Shipping Cost]' role='measure' type='quantitative' />
+            <column-instance column='[Shipping Cost]' derivation='Sum' name='[cum:sum:Shipping Cost:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='RowInPane' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order Priority]' derivation='None' name='[none:Order Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Date]' derivation='Month-Trunc' name='[tmn:Ship Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[Global Superstore 2016].[none:Order Priority:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Critical&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Not Specified&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[Global Superstore 2016].[none:Ship Mode:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Same Day&quot;</bucket>
+              <bucket>&quot;First Class&quot;</bucket>
+              <bucket>&quot;Second Class&quot;</bucket>
+              <bucket>&quot;Standard Class&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[Global Superstore 2016].[none:Ship Mode:nk]</column>
+            <column>[Global Superstore 2016].[none:Market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[Global Superstore 2016].[tmn:Ship Date:qk]' scope='cols' value='true' />
+            <format attr='height' field='[Global Superstore 2016].[tmn:Ship Date:qk]' value='41' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Global Superstore 2016].[none:Order Priority:nk]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[Global Superstore 2016].[none:Order Priority:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#555555' fontsize='12'>The running sum of shipping cost for  &lt;[Global Superstore 2016].[none:Order Priority:nk]&gt; Priority orders shipped in &lt;[Global Superstore 2016].[tmn:Ship Date:qk]&gt; is </run>
+                <run bold='true' fontcolor='#555555' fontsize='12'>&#10;&lt;[Global Superstore 2016].[cum:sum:Shipping Cost:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='173' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Global Superstore 2016].[cum:sum:Shipping Cost:qk]</rows>
+        <cols>([Global Superstore 2016].[none:Ship Mode:nk] * [Global Superstore 2016].[tmn:Ship Date:qk])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Running Total Shipping Costs (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Global Superstore 2016' />
+          </datasources>
+          <datasource-dependencies datasource='Global Superstore 2016'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Ship Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Shipping Cost]' role='measure' type='quantitative' />
+            <column-instance column='[Shipping Cost]' derivation='Sum' name='[cum:sum:Shipping Cost:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='RowInPane' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order Priority]' derivation='None' name='[none:Order Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Date]' derivation='Month-Trunc' name='[tmn:Ship Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[Global Superstore 2016].[none:Order Priority:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Critical&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Not Specified&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[Global Superstore 2016].[none:Ship Mode:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Same Day&quot;</bucket>
+              <bucket>&quot;First Class&quot;</bucket>
+              <bucket>&quot;Second Class&quot;</bucket>
+              <bucket>&quot;Standard Class&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[Global Superstore 2016].[none:Ship Mode:nk]</column>
+            <column>[Global Superstore 2016].[none:Market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[Global Superstore 2016].[tmn:Ship Date:qk]' scope='cols' value='true' />
+            <format attr='height' field='[Global Superstore 2016].[tmn:Ship Date:qk]' value='41' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Global Superstore 2016].[none:Order Priority:nk]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[Global Superstore 2016].[none:Order Priority:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#555555' fontsize='12'>The running sum of shipping cost for  &lt;[Global Superstore 2016].[none:Order Priority:nk]&gt; Priority orders shipped in &lt;[Global Superstore 2016].[tmn:Ship Date:qk]&gt; is </run>
+                <run bold='true' fontcolor='#555555' fontsize='12'>&#10;&lt;[Global Superstore 2016].[cum:sum:Shipping Cost:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='173' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Global Superstore 2016].[cum:sum:Shipping Cost:qk]</rows>
+        <cols>([Global Superstore 2016].[none:Ship Mode:nk] * [Global Superstore 2016].[tmn:Ship Date:qk])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Scatterplot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Global Superstore 2016' />
+          </datasources>
+          <datasource-dependencies datasource='Global Superstore 2016'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Segment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Segment]' derivation='None' name='[none:Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[Global Superstore 2016].[none:Category:nk]'>
+            <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[Global Superstore 2016].[none:Category:nk]</column>
+            <column>[Global Superstore 2016].[none:Market:nk]</column>
+            <column>[Global Superstore 2016].[none:Ship Mode:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[Global Superstore 2016].[none:Category:nk]' />
+              <lod column='[Global Superstore 2016].[none:Sub-Category:nk]' />
+              <lod column='[Global Superstore 2016].[none:Market:nk]' />
+              <lod column='[Global Superstore 2016].[none:Segment:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='false' enabled='true' exclude-color='true' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='2' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='line-pattern-only' value='solid' />
+                <format attr='line-visibility' value='on' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Global Superstore 2016].[sum:Profit:qk]</rows>
+        <cols>[Global Superstore 2016].[sum:Sales:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Shipping Cost'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Shipping Cost</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Global Superstore 2016' />
+          </datasources>
+          <datasource-dependencies datasource='Global Superstore 2016'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Shipping Cost]' role='measure' type='quantitative' />
+            <column-instance column='[Shipping Cost]' derivation='Avg' name='[avg:Shipping Cost:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order Priority]' derivation='None' name='[none:Order Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[Global Superstore 2016].[none:Order Priority:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Critical&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Not Specified&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[Global Superstore 2016].[none:Ship Mode:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Same Day&quot;</bucket>
+              <bucket>&quot;First Class&quot;</bucket>
+              <bucket>&quot;Second Class&quot;</bucket>
+              <bucket>&quot;Standard Class&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[Global Superstore 2016].[none:Ship Mode:nk]</column>
+            <column>[Global Superstore 2016].[none:Market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[Global Superstore 2016].[none:Order Priority:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='stroke-color' id='refline0' value='#898989' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Global Superstore 2016].[none:Order Priority:nk]' value='Click to highlight'>
+              <formatted-text>
+                <run>Click to highlight</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[Global Superstore 2016].[none:Order Priority:nk]' />
+              <lod column='[Global Superstore 2016].[none:Ship Mode:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#555555' fontsize='12'>For &lt;[Global Superstore 2016].[none:Order Priority:nk]&gt; Priority orders shipped &lt;[Global Superstore 2016].[none:Ship Mode:nk]&gt;&#10;The average shipping cost is </run>
+                <run bold='true' fontcolor='#555555' fontsize='12'>&lt;[Global Superstore 2016].[avg:Shipping Cost:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='173' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([Global Superstore 2016].[none:Ship Mode:nk] / [Global Superstore 2016].[none:Order Priority:nk])</rows>
+        <cols>[Global Superstore 2016].[avg:Shipping Cost:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Shipping Cost (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Shipping Cost</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Global Superstore 2016' />
+          </datasources>
+          <datasource-dependencies datasource='Global Superstore 2016'>
+            <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Order Priority]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Shipping Cost]' role='measure' type='quantitative' />
+            <column-instance column='[Shipping Cost]' derivation='Avg' name='[avg:Shipping Cost:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order Priority]' derivation='None' name='[none:Order Priority:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[Global Superstore 2016].[none:Order Priority:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Critical&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Not Specified&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[Global Superstore 2016].[none:Ship Mode:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Same Day&quot;</bucket>
+              <bucket>&quot;First Class&quot;</bucket>
+              <bucket>&quot;Second Class&quot;</bucket>
+              <bucket>&quot;Standard Class&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[Global Superstore 2016].[none:Ship Mode:nk]</column>
+            <column>[Global Superstore 2016].[none:Market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[Global Superstore 2016].[none:Order Priority:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='stroke-color' id='refline0' value='#898989' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[Global Superstore 2016].[none:Order Priority:nk]' value='Click to highlight'>
+              <formatted-text>
+                <run>Click to highlight</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[Global Superstore 2016].[none:Order Priority:nk]' />
+              <lod column='[Global Superstore 2016].[none:Ship Mode:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#555555' fontsize='12'>For &lt;[Global Superstore 2016].[none:Order Priority:nk]&gt; Priority orders shipped &lt;[Global Superstore 2016].[none:Ship Mode:nk]&gt;&#10;The average shipping cost is </run>
+                <run bold='true' fontcolor='#555555' fontsize='12'>&lt;[Global Superstore 2016].[avg:Shipping Cost:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='173' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([Global Superstore 2016].[none:Ship Mode:nk] / [Global Superstore 2016].[none:Order Priority:nk])</rows>
+        <cols>[Global Superstore 2016].[avg:Shipping Cost:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource name='Global Superstore 2016' />
+      </datasources>
+      <datasource-dependencies datasource='Global Superstore 2016'>
+        <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+        <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97270' id='15' param='vert' type='layout-flow' w='98034' x='983' y='1365'>
+            <zone h='7167' id='16' type='title' w='98034' x='983' y='1365'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90103' id='7' param='horz' type='layout-flow' w='98034' x='983' y='8532'>
+              <zone h='90103' id='3' param='vert' type='layout-flow' w='78378' x='983' y='8532'>
+                <zone h='90103' id='4' type='layout-basic' w='78378' x='983' y='8532'>
+                  <zone h='45051' id='5' name='Running Total Shipping Costs' w='78378' x='983' y='8532'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45052' id='9' name='Shipping Cost' w='39189' x='983' y='53583'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='45052' id='10' name='Average Shipping Cost by Country' w='39189' x='40172' y='53583'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='90103' id='6' is-fixed='true' param='vert' type='layout-flow' w='19656' x='79361' y='8532'>
+                <zone h='18430' id='11' mode='radiolist' name='Average Shipping Cost by Country' param='[Global Superstore 2016].[none:Category:nk]' type='filter' values='relevant' w='19656' x='79361' y='8532'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='18089' id='8' name='Running Total Shipping Costs' pane-specification-id='0' param='[Global Superstore 2016].[none:Order Priority:nk]' type='color' w='19656' x='79361' y='26962'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='11092' id='12' name='Average Shipping Cost by Country' pane-specification-id='0' param='[Global Superstore 2016].[avg:Shipping Cost:qk]' type='color' w='19656' x='79361' y='45051'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='21672' id='13' mode='radiolist' name='Running Total Shipping Costs' param='[Global Superstore 2016].[none:Ship Mode:nk]' type='filter' values='database' w='19656' x='79361' y='56143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Shipping Overview' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Shipping Overview</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98634' id='1' param='vert' removable='false' type='layout-flow' w='99018' x='491' y='683'>
+            <zone h='6314' id='3' type='title' w='99018' x='491' y='683'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-top' value='0' />
+                <format attr='margin-right' value='0' />
+                <format attr='margin-left' value='0' />
+              </zone-style>
+            </zone>
+            <zone h='18600' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='99018' x='491' y='6997'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-right' value='0' />
+                <format attr='margin-left' value='0' />
+              </zone-style>
+            </zone>
+            <zone h='73720' id='5' paired-zone-id='4' removable='false' type='flipboard' w='99018' x='491' y='25597'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='false'>
+                <story-points>
+                  <story-point caption='Costs are fairly even worldwide: is that true for all Categories?' captured-sheet='Average Shipping Cost by Country (2)' id='1' />
+                  <story-point caption='Shipping Costs are highest for Critical Priority orders' captured-sheet='Resized Shipping Cost' id='7'>
+                    <capturedDeltas>
+                      <worksheet name='Resized Shipping Cost'>
+                        <highlight field='[Global Superstore 2016].[none:Order Priority:nk]'>
+                          <color-one-way>
+                            <field>[Global Superstore 2016].[none:Segment:nk]</field>
+                            <field>[Global Superstore].[none:Ship Mode:nk]</field>
+                            <field>[Superstore].[none:Order Priority:nk]</field>
+                            <field>[Superstore].[none:Product Category:nk]</field>
+                            <field>[Superstore].[none:Product Container:nk]</field>
+                            <field>[Superstore].[none:Ship Mode:nk]</field>
+                          </color-one-way>
+                          <bucket-selection>
+                            <bucket>&quot;Critical&quot;</bucket>
+                          </bucket-selection>
+                        </highlight>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Most orders are Medium Order Priority, regardless of Category' captured-sheet='Product Orders' id='3'>
+                    <capturedDeltas>
+                      <worksheet name='Product Orders'>
+                        <filter class='categorical' column='[Global Superstore 2016].[none:Sub-Category:nk]'>
+                          <groupfilter function='level-members' level='[none:Sub-Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                        <highlight field='[Global Superstore 2016].[none:Order Priority:nk]'>
+                          <color-one-way>
+                            <field>[Superstore].[none:Order ID:ok]</field>
+                            <field>[Superstore].[none:Order Priority:nk]</field>
+                            <field>[Superstore].[none:Product Name:nk]</field>
+                            <field>[Superstore].[none:Product Sub-Category:nk]</field>
+                            <field>[Superstore].[none:Region:nk]</field>
+                            <field>[Superstore].[none:State or Province:nk]</field>
+                          </color-one-way>
+                          <bucket-selection>
+                            <bucket>&quot;Medium&quot;</bucket>
+                          </bucket-selection>
+                        </highlight>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Standard shipping is least expensive yet  highest cost overall' captured-sheet='Running Total Shipping Costs (2)' id='4'>
+                    <capturedDeltas>
+                      <worksheet name='Running Total Shipping Costs (2)'>
+                        <selection-collection>
+                          <node-selection select-tuples='false'>
+                            <oriented-node-reference orientation='horizontal'>
+                              <node-reference>
+                                <fields>
+                                  <field>[Global Superstore 2016].[none:Ship Mode:nk]</field>
+                                </fields>
+                                <multibucket>
+                                  <bucket>&quot;Standard Class&quot;</bucket>
+                                </multibucket>
+                              </node-reference>
+                              <page-reference />
+                            </oriented-node-reference>
+                          </node-selection>
+                        </selection-collection>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Explore trends by Market using the dropdown filter' captured-sheet='presized dashboard' id='5'>
+                    <capturedDeltas>
+                      <worksheet name='Average Shipping Cost by Country (2)'>
+                        <filter class='categorical' column='[Global Superstore 2016].[none:Market:nk]'>
+                          <groupfilter function='level-members' level='[none:Market:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Running Total Shipping Costs (2)'>
+                        <filter class='categorical' column='[Global Superstore 2016].[none:Market:nk]'>
+                          <groupfilter function='level-members' level='[none:Market:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Shipping Cost (2)'>
+                        <filter class='categorical' column='[Global Superstore 2016].[none:Market:nk]'>
+                          <groupfilter function='level-members' level='[none:Market:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                </story-points>
+              </flipboard>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-right' value='0' />
+                <format attr='margin-left' value='0' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Story' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Story Title</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='22' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='21' param='vert' removable='false' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='7706' id='23' type='title' w='100000' x='0' y='0'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-top' value='0' />
+                <format attr='margin-right' value='0' />
+                <format attr='margin-left' value='0' />
+              </zone-style>
+            </zone>
+            <zone h='18665' id='24' paired-zone-id='25' removable='false' type='flipboard-nav' w='100000' x='0' y='7706'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-right' value='0' />
+                <format attr='margin-left' value='0' />
+              </zone-style>
+            </zone>
+            <zone h='72944' id='25' paired-zone-id='24' removable='false' type='flipboard' w='100000' x='0' y='26371'>
+              <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='2' />
+                </story-points>
+              </flipboard>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-right' value='0' />
+                <format attr='margin-left' value='0' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='presized dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Shipping Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <datasources>
+        <datasource name='Global Superstore 2016' />
+      </datasources>
+      <datasource-dependencies datasource='Global Superstore 2016'>
+        <column datatype='string' name='[Market]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Ship Mode]' role='dimension' type='nominal' />
+        <column-instance column='[Market]' derivation='None' name='[none:Market:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Ship Mode]' derivation='None' name='[none:Ship Mode:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='12' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='21' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='99325' id='19' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='44943' id='15' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+                <zone h='44943' id='13' type='layout-basic' w='85116' x='0' y='0'>
+                  <zone h='44943' id='11' name='Running Total Shipping Costs (2)' w='85116' x='0' y='0'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-top' value='0' />
+                      <format attr='margin-left' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='160' h='44943' id='14' is-fixed='true' param='vert' type='layout-flow' w='14884' x='85116' y='0'>
+                  <zone fixed-size='41' h='8939' id='24' is-fixed='true' type='empty' w='14884' x='85116' y='0'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-top' value='0' />
+                      <format attr='margin-right' value='0' />
+                    </zone-style>
+                  </zone>
+                  <zone h='8264' id='22' mode='checkdropdown' name='Running Total Shipping Costs (2)' param='[Global Superstore 2016].[none:Ship Mode:nk]' type='filter' w='14884' x='85116' y='8939'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-right' value='0' />
+                    </zone-style>
+                  </zone>
+                  <zone h='8264' id='23' mode='checkdropdown' name='Running Total Shipping Costs (2)' param='[Global Superstore 2016].[none:Market:nk]' type='filter' w='14884' x='85116' y='17203'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-right' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='54382' id='17' name='Shipping Cost (2)' w='50000' x='0' y='44943'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-left' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='54382' id='18' name='Average Shipping Cost by Country (2)' w='50000' x='50000' y='44943'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-right' value='0' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+            <format attr='margin-top' value='8' />
+            <format attr='margin-right' value='8' />
+            <format attr='margin-bottom' value='8' />
+            <format attr='margin-left' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='4138' id='16' name='Running Total Shipping Costs (2)' pane-specification-id='0' param='[Global Superstore 2016].[none:Order Priority:nk]' type='color' w='75383' x='40561' y='2299' />
+      </zones>
+    </dashboard>
+    <dashboard name='대시보드 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Global Superstore 2016' />
+      </datasources>
+      <datasource-dependencies datasource='Global Superstore 2016'>
+        <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+        <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='31625' id='1' name='Average Shipping Cost by Country' w='40400' x='18500' y='34625' />
+        <zone h='12500' id='2' mode='radiolist' name='Average Shipping Cost by Country' param='[Global Superstore 2016].[none:Category:nk]' type='filter' values='relevant' w='16000' x='59400' y='22750' />
+        <zone h='9500' id='3' name='Average Shipping Cost by Country' pane-specification-id='0' param='[Global Superstore 2016].[avg:Shipping Cost:qk]' type='color' w='14000' x='59100' y='36875' />
+        <zone h='32875' id='4' name='Running Total Shipping Costs' w='32600' x='4200' y='6750' />
+        <zone h='12250' id='5' name='Running Total Shipping Costs' pane-specification-id='0' param='[Global Superstore 2016].[none:Order Priority:nk]' type='color' w='14000' x='36800' y='15875' />
+      </zones>
+    </dashboard>
+    <dashboard name='대시보드 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='9875' id='1' is-scaled='1' param='Image/tab-1000x257.jpg' type='bitmap' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='' h='88125' id='3' param='tableau.com' type='web' w='98400' x='800' y='10875'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Average Shipping Cost by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[Global Superstore 2016].[avg:Shipping Cost:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[Global Superstore 2016].[none:Category:nk]' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Shipping Cost'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[Global Superstore 2016].[none:Order Priority:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Running Total Shipping Costs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[Global Superstore 2016].[none:Order Priority:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='dashboard' name='Shipping Overview'>
+      <viewpoints />
+      <active id='4' />
+    </window>
+    <window class='worksheet' name='Scatterplot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[Global Superstore 2016].[none:Category:nk]' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Average Shipping Cost by Country'>
+          <zoom type='entire-view' />
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Running Total Shipping Costs'>
+          <zoom type='entire-view' />
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Shipping Cost'>
+          <zoom type='entire-view' />
+          <geo-search-visibility value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+    </window>
+    <window class='dashboard' name='Story'>
+      <viewpoints />
+      <active id='-1' />
+    </window>
+    <window class='dashboard' name='대시보드 3'>
+      <viewpoints>
+        <viewpoint name='Average Shipping Cost by Country'>
+          <zoom type='entire-view' />
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Running Total Shipping Costs'>
+          <zoom type='entire-view' />
+          <geo-search-visibility value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+    </window>
+    <window class='dashboard' maximized='true' name='대시보드 4'>
+      <viewpoints />
+      <active id='-1' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Shipping Cost by Country (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[Global Superstore 2016].[avg:Shipping Cost:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[Global Superstore 2016].[none:Category:nk]' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Product Orders'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[Global Superstore 2016].[none:Order Priority:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Resized Shipping Cost'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[Global Superstore 2016].[none:Order Priority:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Running Total Shipping Costs (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[Global Superstore 2016].[none:Order Priority:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Shipping Cost (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[Global Superstore 2016].[none:Order Priority:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='dashboard' hidden='true' name='presized dashboard'>
+      <viewpoints>
+        <viewpoint name='Average Shipping Cost by Country (2)' />
+        <viewpoint name='Running Total Shipping Costs (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Shipping Cost (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+  </windows>
+</workbook>
